@@ -105,7 +105,7 @@ function mayorQueCincuenta(num) {
 function obtenerResto(x, y) {
   // Obten el resto de la división de "x" entre "y"
   // Tu código:
-  var resto=x%y;
+  return x % y;
 }
 
 function esPar(num) {
@@ -172,9 +172,9 @@ function esPositivo(numero) {
   //Si el número es positivo, devolver ---> "Es positivo"
   //Si el número es negativo, devolver ---> "Es negativo"
   //Si el número es 0, devuelve false
-if(num=0){
+if(numero===0){
   return false;
-}else if(num>0){
+}else if(numero>0){
   return "Es positivo";
 }else {
   return "Es negativo";
@@ -192,7 +192,7 @@ function combinarNombres(nombre, apellido) {
   // Devuelve "nombre" y "apellido" combinados en una string y separados por un espacio.
   // Ejemplo: "Soy", "Henry" -> "Soy Henry"
   // Tu código:
-  let nuevoStr=nombre+""+apellido;
+  let nuevoStr=`${nombre} ${apellido}`;
   return nuevoStr;
 }
 
@@ -200,8 +200,7 @@ function obtenerSaludo(nombre) {
   // Toma la string "nombre" y concatena otras string en la cadena para que tome la siguiente forma:
   // "Martin" -> "Hola Martin!"
   // Tu código:
-  let nuevoStr="Hola "+nombre+"!";
-  console.log(nuevaString);
+  return `Hola ${nombre}!`;
 }
 
 function obtenerAreaRectangulo(alto, ancho) {
